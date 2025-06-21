@@ -76,10 +76,21 @@ Planned Enhancements:
 
 ## 🔗 Demo
 
+
 Experience the game live:  
 👉 [Math Sprint Web Demo](https://candid-brioche-53d853.netlify.app/)
 
-[![🖼️ Game Preview](https://via.placeholder.com/800x400?text=Game+Screenshot+Preview)](https://candid-brioche-53d853.netlify.app/)
+<div align="center">
+  <img src="./photos/Pic-1.png" alt="Screenshot 1" width="45%" style="margin-right: 10px;" />
+  <img src="./photos/Pic-2.png" alt="Screenshot 2" width="45%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="./photos/Pic-3.png" alt="Screenshot 3" width="90%" />
+</div>
+
 
 ---
 
