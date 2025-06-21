@@ -1,72 +1,53 @@
-# 🚀 Project 001: Math Sprint! 🧠
+# 🚀 Math Sprint! 🧠⚡
 
-Welcome to **Math Sprint!** — a fast-paced web game designed to test your math skills and reflexes. Race against the clock to solve as many math problems as possible!
+A lightning-fast mental math challenge game that tests your calculation speed under pressure!
 
----
+## 🌟 Features
 
-## 🎮 Features
+### 🎮 Core Gameplay
+- **Progressive Difficulty**: Simple addition → mixed operations
+- **3-Second Timer**: Visual countdown bar
+- **Level System**: New challenges every 10 points
+- **Visual Feedback**: Animated checkmarks for correct answers
 
-- Dynamic math problems: addition, subtraction, and multiplication  
-- Countdown timer to add pressure and excitement  
-- Score tracker to keep your progress  
-- Responsive design for desktop and mobile  
-- Clean and simple user interface  
+### 🎨 Theme & Accessibility
+- Dark/Light Mode toggle (🌙/☀️)
+- Remembers your theme preference
+- Fully responsive design
 
----
+### 🎧 Audio Experience
+- Positive "ding" for correct answers
+- Playful laugh for wrong answers
+- Sound toggle (🔊/🔇)
 
-## 🕹 How to Play
+## 📱 How to Play
 
-1. Click the **Start** button to begin the game.  
-2. Solve the math problem displayed by typing the answer and pressing Enter.  
-3. Keep going until the timer runs out!  
-4. Try to beat your highest score every time.  
+### Desktop:
+1. Press **START GAME 🎮**
+2. Use Q/W/E keys or click answers
+3. Earn points → Level up at 10 points
 
----
+### Mobile:
+1. Tap **START GAME 🎮**  
+2. Select answers by tapping
+3. Watch the timer bar
 
-## 📁 Project Structure
+## 🛠 Tech Stack
+- HTML5, CSS3, JavaScript
+- Web Audio API
+- localStorage
 
-Project-001-Math-Sprint-Game/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── .gitignore
+## 🚀 Coming Soon
+- High Score System
+- Multiplication & Division
+- Time Bonuses
 
+## 🌐 Live Demo
+[Play Now](#) (Add your link here)
 
----
-
-## 📸 Screenshots
-
-*(Add your screenshots here!)*
-
----
-
-## 🔧 Technologies Used
-
-- HTML5  
-- CSS3  
-- JavaScript (ES6+)  
-
----
-
-## 📡 Live Demo
-
-Check out the live version here:  
-[https://yourusername.github.io/Project-001-Math-Sprint-Game](https://yourusername.github.io/Project-001-Math-Sprint-Game)
-
----
-
-## 👨‍💻 Author
-
-**Eyasu Zerihun (Josh)**  
-Aspiring Front-end Developer & Game Enthusiast  
-[Portfolio](https://your-portfolio-link.com) | [Email](mailto:youremail@example.com)
-
----
+## 👨‍💻 Developer
+**Eyasu Zerihun**  
+🔗 [Portfolio](#) | ✉️ [Email](#)
 
 ## 📜 License
-
-This project is licensed under the MIT License.
-
----
-
+MIT License
