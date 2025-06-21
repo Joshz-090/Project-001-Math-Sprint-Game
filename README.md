@@ -1,55 +1,87 @@
-# 🚀 Math Sprint! 🧠⚡
+# Math Sprint 🚀
 
-A lightning-fast mental math challenge game that tests your calculation speed under pressure!
+[![Live Demo](https://img.shields.io/badge/Play-Live_Demo-brightgreen)](https://candid-brioche-53d853.netlify.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## 🌟 Features
+A fast-paced arithmetic challenge game designed to sharpen mental math skills through timed problem-solving.
 
-### 🎮 Core Gameplay
-- **Progressive Difficulty**: Simple addition → mixed operations
-- **3-Second Timer**: Visual countdown bar
-- **Level System**: New challenges every 10 points
-- **Visual Feedback**: Animated checkmarks for correct answers
+## Table of Contents
+- [Features](#features)
+- [Gameplay](#gameplay)
+- [Installation](#installation)
+- [Technologies](#technologies)
+- [Roadmap](#roadmap)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
 
-### 🎨 Theme & Accessibility
-- Dark/Light Mode toggle (🌙/☀️)
-- Remembers your theme preference
-- Fully responsive design
+## Features
 
-### 🎧 Audio Experience
-- Positive "ding" for correct answers
-- Playful laugh for wrong answers
-- Sound toggle (🔊/🔇)
+### Core Mechanics
+- **Adaptive Difficulty**: Progress from basic addition to complex mixed operations
+- **Time Pressure**: 3-second response window with visual countdown
+- **Level Progression**: Unlock advanced problems every 10 points
+- **Instant Feedback**: Visual and audio cues for responses
 
-## 📱 How to Play
+### User Experience
+- **Dual Theme System**: Toggle between light/dark modes
+- **Persistent Settings**: Remembers user preferences
+- **Cross-Platform**: Fully responsive mobile/desktop design
+- **Audio Controls**: Optional sound effects
 
-### Desktop:
-1. Press **START GAME 🎮**
-2. Use Q/W/E keys or click answers
-3. Earn points → Level up at 10 points
+## Gameplay
 
-### Mobile:
-1. Tap **START GAME 🎮**  
-2. Select answers by tapping
-3. Watch the timer bar
+### Desktop Controls
+1. Launch game with **START GAME** button
+2. Answer using:
+   - Mouse clicks **OR**
+   - Keyboard shortcuts (Q/W/E)
+3. Advance through levels by scoring points
 
-## 🛠 Tech Stack
-- HTML5, CSS3, JavaScript
-- Web Audio API
-- localStorage
+### Mobile Experience
+- Touch-optimized interface
+- Larger tap targets
+- Simplified visual feedback
 
-## 🚀 Coming Soon
-- High Score System
-- Multiplication & Division
-- Time Bonuses
+## Technologies
 
-## 🌐 Live Demo
-[Play Math Sprint! Now](https://candid-brioche-53d853.netlify.app/) 🚀
+**Frontend**:
+- HTML5 Semantic Markup
+- CSS3 Animations and Flexbox/Grid
+- Vanilla JavaScript (ES6+)
 
-[![Live Demo Badge](https://img.shields.io/badge/Play%20Now-Live%20Demo-brightgreen)](https://candid-brioche-53d853.netlify.app/)
+**Key APIs**:
+- Web Audio API for sound effects
+- localStorage for state persistence
 
-## 👨‍💻 Developer
-**Eyasu Zerihun**  
-🔗 [[Portfolio](https://joshz-090.github.io/my-portfolio/)](#) | ✉️ [eyasuzerihun80@gmail.com](#)
+## Roadmap
 
-## 📜 License
-MIT License
+Planned Enhancements:
+- [ ] High score leaderboard
+- [ ] Multiplication/division problems
+- [ ] Progressive time adjustments
+- [ ] Performance analytics dashboard
+
+## Demo
+
+Experience the game live:  
+[Math Sprint Web Demo](https://candid-brioche-53d853.netlify.app/)
+
+[![Game Preview](https://via.placeholder.com/800x400?text=Game+Screenshot+Preview)](https://candid-brioche-53d853.netlify.app/)
+
+## Contributing
+
+We welcome contributions! Please:
+1. Fork the repository
+2. Create your feature branch
+3. Submit a pull request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+**Developer**: Eyasu Zerihun  
+**Contact**: eyasuzerihun80@gmail.com  
+**Portfolio**: [joshz-090.github.io/my-portfolio/](https://joshz-090.github.io/my-portfolio/)
