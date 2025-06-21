@@ -43,11 +43,13 @@ A lightning-fast mental math challenge game that tests your calculation speed un
 - Time Bonuses
 
 ## 🌐 Live Demo
-[Play Now](#) (Add your link here)
+[Play Math Sprint! Now](https://candid-brioche-53d853.netlify.app/) 🚀
+
+[![Live Demo Badge](https://img.shields.io/badge/Play%20Now-Live%20Demo-brightgreen)](https://candid-brioche-53d853.netlify.app/)
 
 ## 👨‍💻 Developer
 **Eyasu Zerihun**  
-🔗 [Portfolio](#) | ✉️ [Email](#)
+🔗 [[Portfolio](https://joshz-090.github.io/my-portfolio/)](#) | ✉️ [eyasuzerihun80@gmail.com](#)
 
 ## 📜 License
 MIT License
