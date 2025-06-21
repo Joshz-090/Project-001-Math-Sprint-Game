@@ -1,0 +1,348 @@
+/* ===== BASE RESETS & GLOBAL STYLES ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+  color: #333;
+  padding-top: 150px; /* Space for fixed header */
+  transition: all 0.3s ease;
+}
+
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+  background: linear-gradient(135deg, #121212 0%, #222 100%);
+  color: #f0f0f0;
+}
+
+/* ===== HEADER STYLES ===== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.dark-mode header {
+  background-color: rgba(30, 30, 30, 0.95);
+}
+
+header img {
+  height: 100px;
+  width: auto;
+  transition: transform 0.3s;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0 10px;
+}
+
+.dark-mode header h1 {
+  background: linear-gradient(to right, #3aafff, #4cff8f);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+header > div {
+  display: flex;
+  gap: 10px;
+}
+
+/* Header buttons */
+.sound-toggle,
+.dark-mode-toggle {
+  background: rgba(0, 0, 0, 0.08);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.dark-mode .sound-toggle,
+.dark-mode .dark-mode-toggle {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* ===== GAME CONTAINERS ===== */
+#start-screen,
+#game-screen {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  width: 95%;
+  max-width: 500px;
+  transition: all 0.3s;
+}
+
+.dark-mode #start-screen,
+.dark-mode #game-screen {
+  background: #2a2a2a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#game-screen {
+  display: none;
+}
+
+/* ===== GAME ELEMENTS ===== */
+#score {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.timer-container {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.dark-mode .progress-container {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 6px;
+  transition: width 0.1s linear;
+}
+
+#question {
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  min-height: 60px;
+  color: #2c3e50;
+}
+
+.dark-mode #question {
+  color: #f0f0f0;
+}
+
+/* ===== ANSWER OPTIONS ===== */
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+#options button {
+  flex: 1;
+  min-width: 80px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background: linear-gradient(145deg, #3498db, #2ecc71);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Keyboard key indicators (desktop only) */
+#options button::after {
+  content: attr(data-key);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: none; /* Hidden by default */
+}
+
+#options button:active {
+  transform: scale(0.96);
+}
+
+/* ===== KEY HINTS ===== */
+.key-hint {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 1rem;
+  font-style: italic;
+  display: none; /* Hidden by default */
+}
+
+.dark-mode .key-hint {
+  color: #aaa;
+}
+
+/* Desktop hint */
+.key-hint.desktop-hint {
+  display: none; /* Will be shown via media query */
+}
+
+/* Mobile hint */
+.key-hint.mobile-hint {
+  display: none; /* Will be shown via media query */
+}
+
+/* ===== START BUTTON ===== */
+#start-btn {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  background: linear-gradient(145deg, #e74c3c, #f39c12);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+#start-btn:hover {
+  transform: scale(1.03);
+}
+
+#start-btn:active {
+  transform: scale(0.98);
+}
+
+/* ===== FEEDBACK ANIMATION ===== */
+.correct-feedback {
+  position: fixed;
+  font-size: 100px;
+  color: #4caf50;
+  pointer-events: none;
+  animation: fadeInOut 0.5s ease-out;
+  z-index: 100;
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (min-width: 769px) {
+  /* Show desktop hint and key indicators */
+  .key-hint.desktop-hint {
+    display: block;
+  }
+  #options button::after {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  header {
+    padding: 10px 5%;
+  }
+
+  header img {
+    height: 60px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  /* Show mobile hint */
+  .key-hint.mobile-hint {
+    display: block;
+  }
+
+  /* Adjust game elements */
+  #question {
+    font-size: 2rem;
+  }
+
+  #options {
+    gap: 10px;
+  }
+
+  #options button {
+    font-size: 1.4rem;
+    padding: 1.2rem 0.5rem;
+    min-width: 70px;
+  }
+
+  /* Header buttons */
+  .sound-toggle,
+  .dark-mode-toggle {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #question {
+    font-size: 1.8rem;
+  }
+
+  #options button {
+    font-size: 1.3rem;
+    min-width: 60px;
+    padding: 1rem 0.5rem;
+  }
+
+  #start-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}

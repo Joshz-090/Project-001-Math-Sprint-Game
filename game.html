@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Sprint!</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./game.css" />
+    <link
+      rel="icon"
+      href="./photos/White  Logo .png"
+      sizes="32x32"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img
+          id="logo"
+          src="./photos/Black_Logo_-removebg-preview.png"
+          alt="Math Sprint Logo"
+        />
+      </div>
+
+      <h1>Math Sprint! 🚀</h1>
+
+      <div>
+        <button class="sound-toggle" id="sound-btn">🔊</button>
+        <button class="dark-mode-toggle" id="dark-mode-btn">🌙</button>
+      </div>
+    </header>
+
+    <div id="start-screen">
+      <button id="start-btn">START GAME 🎮</button>
+    </div>
+
+    <div id="game-screen">
+      <div id="score">⭐ Score: 0</div>
+      <div class="timer-container">
+        <div>⏳ Time left: <span id="time-text">3s</span></div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <!-- Updated key hints - shows appropriate message based on device -->
+      <div class="key-hint desktop-hint">(Press Q/W/E to answer faster!)</div>
+      <div class="key-hint mobile-hint">(Tap the buttons to answer!)</div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
