@@ -1,0 +1,12 @@
+# 👉 Ignore all mp3 sound files
+*.mp3
+
+# 👉 Ignore the photos folder (if it's just images, not game content)
+photos/
+
+# 👉 Ignore VS Code project settings (optional)
+.vscode/
+
+# 👉 Ignore system-generated junk files
+.DS_Store
+Thumbs.db
