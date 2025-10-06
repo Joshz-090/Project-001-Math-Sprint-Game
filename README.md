@@ -111,4 +111,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### 👨‍💻 Developer: Eyasu Zerihun  
 📧 **Contact**: [eyasuzerihun80@gmail.com](mailto:eyasuzerihun80@gmail.com)  
-🌐 **Portfolio**: [joshz-090.github.io/my-portfolio](https://joshz-090.github.io/my-portfolio/)
+🌐 **Portfolio**: [joshz-090.github.io/my-portfolio](https://joshz-090.github.io/my-portfolio/) 
