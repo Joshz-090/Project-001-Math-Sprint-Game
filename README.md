@@ -1,4 +1,4 @@
-# 🚀 Math Sprint! 🧠
+# 🚀 Math Sprint! 🧠 
 
 [![🎮 Play Live](https://img.shields.io/badge/Play-Live_Demo-brightgreen)](https://candid-brioche-53d853.netlify.app/)
 [![📄 License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
