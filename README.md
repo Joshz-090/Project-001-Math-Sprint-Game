@@ -4,7 +4,7 @@
 [![📄 License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A fast-paced arithmetic challenge game designed to sharpen mental math skills through timed problem-solving.
-
+ 
 ---
 
 ## 🧭 Table of Contents
